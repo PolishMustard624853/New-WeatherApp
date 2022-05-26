@@ -16,3 +16,6 @@ Udemy javascript courses that I have been using to study
 https://github.com/PolishMustard624853/New-WeatherApp
 
 https://polishmustard624853.github.io/New-WeatherApp/
+
+## Screenshot of Application
+![Alt text](./127.0.0.1_5500_index.html.png)
