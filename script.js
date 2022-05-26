@@ -6,6 +6,15 @@ const api = {
 const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
-function setQuery(evt) {
-    
+// if keyCode(13) is registered, get the results
+function setQuery(event) {
+    if (event.keyCode == 13) {
+        getResults(searchbox.value);
+        console.log(searchbox.value);
+    }
 }
+
+function displayResults (weather) {
+    let city = 
+}
+
