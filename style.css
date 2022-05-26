@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/pexels-andre-furtado-1162251.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: rgb(168, 0, 0);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.649);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid rgb(169, 0, 0);
+    font-size: 20px;
+    transition: 0.2s ease-out;
+}
+
+header input:focus {
+    background-color: rgba(240, 255, 255, 0.871);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    font-size: 32px;
+    color: rgb(0, 234, 255);
+    font-weight: 500;
+    text-shadow: 0px 3px rgb(0, 0, 0, 0.5);
+}
+
+.location .date {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-shadow: 0px 3px rgb(0, 0, 0, 0.5);
+}
+
+.current .temp {
+    font-size: 98px;
+    color: aqua;
+    font-weight: 300;
+    margin: 30px 0px;
+    text-shadow: 0px 3px rgb(0, 0, 0, 0.5);
+}
+
+.current .weather {
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+    text-shadow: 0px 3px rgb(0, 0, 0, 0.5);
+}
+
+.current .hi-low {
+    color: aqua;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 3px rgb(0, 0, 0, 0.5);
+}
