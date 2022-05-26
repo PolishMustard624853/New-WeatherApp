@@ -13,3 +13,6 @@ Udemy javascript courses that I have been using to study
 
 ## Links to GitHub and Deployed Application
 
+https://github.com/PolishMustard624853/New-WeatherApp
+
+https://polishmustard624853.github.io/New-WeatherApp/
