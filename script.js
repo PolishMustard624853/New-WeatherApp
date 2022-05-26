@@ -1,6 +1,6 @@
 const api = {
     key: '2198eb51fd8e2b16429dd7ea2c6e4063',
-    base: 'https://api.openweathermap.org/data/2.5/forecast?'
+    base: 'https://api.openweathermap.org/data/2.5/weather?'
 }
 
 const searchbox = document.querySelector('.search-box');
@@ -20,13 +20,21 @@ function getResults (query) {
 }
 
 function displayResults (weather) {
-    console.log(weather);
     let city = document.querySelector('.location .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
     let now = new Date();
     let date = document.querySelector('.location .date');
     date.innerText = dateBuilder(now);
+
+    let temp = document.querySelector('.current .temp');
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°c</span>`;
+
+    let weather_el = document.querySelector('.current .weather');
+    weather_el.innerText = weather.weather[0].main;
+
+    let hilow = document.querySelector('.hi-low');
+    hilow.innetText = `${Math.round(weather.main.temp_min)}°c / ${weather.main.temp_max}°c`;
 }
 
 function dateBuilder (d) {
